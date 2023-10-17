@@ -39,12 +39,13 @@ def train():
         model = model.cuda()
 
     train_data, train_max_sent_len = load_datasets(args.train_data_path)
-    dev_data, dev_max_sent_len = load_datasets(args.dev_data_path)
+    # dev_data, dev_max_sent_len = load_datasets(args.dev_data_path)
     #test_data, max_sent_len = load_datasets(args.data_path, is_test=True)
     
-    train_dataset = CustomDataset(train_data, train_max_sent_len)
-    dev_dataset = CustomDataset(dev_data, dev_max_sent_len)
+    # train_dataset = CustomDataset(train_data, train_max_sent_len)
+    # dev_dataset = CustomDataset(dev_data, dev_max_sent_len)
 
+    exit()
 
     train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, pin_memory=True)
     dev_dataloader = DataLoader(dev_dataset, batch_size=args.batch_size, shuffle=True, pin_memory=True)
