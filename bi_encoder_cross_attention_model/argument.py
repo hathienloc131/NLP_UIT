@@ -14,7 +14,7 @@ class Argument():
         self.batch_size = 10
         self.dropout_rate = 0.3
         self.verdict_size = 3
-        self.train_data_path = "data/train.json"
+        self.train_data_path = "data/ise-dsc01-train.json"
         self.dev_data_path = "data/dev.json"
         self.test_data_path = "data/ise-dsc01-public-test-offcial.json"
 
